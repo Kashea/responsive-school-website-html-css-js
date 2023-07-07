@@ -7,12 +7,17 @@
     <title>Responsive School Website via HTML CSS JS</title>
     <!-- Styles, Icons, Fonts, Animations -->
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/about.css">
+    <link rel="stylesheet" href="./css/contact.css">
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap"
         rel="stylesheet">
+    <style>
+        body {
+            background-image: url("./images/bg-texture.png");
+        }
+    </style>
 </head>
 
 <body>
@@ -32,6 +37,51 @@
         </div>
     </nav>
     <!-- end of navbar -->
+
+    <section class="contact">
+        <div class="container contact__container">
+            <aside class="contact__aside">
+                <div class="aside__image">
+                    <img src="./images/contact.svg" alt="aside-image">
+                </div>
+                <h2>Contact Us</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, ipsa?</p>
+                <ul class="contact__details">
+                    <li>
+                        <i class="uil uil-phone-times"></i>
+                        <h5>+639952801191</h5>
+                    </li>
+                    <li>
+                        <i class="uil uil-envelope"></i>
+                        <h5>camrynchelsea01@gmail.com</h5>
+                    </li>
+                    <li>
+                        <i class="uil uil-location-point"></i>
+                        <h5>Orion Bataan, PH</h5>
+                    </li>
+                </ul>
+                <ul class="contact__socials">
+                    <li><a href="https://facebook.com/rbendillo"><i class="uil uil-facebook"></i></a></li>
+                    <li><a href="https://instagram.com"><i class="uil uil-instagram"></i></a></li>
+                    <li><a href="https://twitter.com"><i class="uil uil-twitter"></i></a></li>
+                    <li><a href="https://linkedin.com"><i class="uil uil-linkedin-alt"></i></a></li>
+                </ul>
+            </aside>
+            <!-- end of aside -->
+
+            <form action="https://formspree.io/f/xzblbdjg" method="POST" class="contact__form">
+                <div class="form__name">
+                    <input type="text" name="First Name" placeholder="First Name" required>
+                    <input type="text" name="Last Name" placeholder="Last Name" required>
+                </div>
+                <input type="email" name="Email Address" placeholder="Your Email Address" required>
+                <textarea name="Message" rows="7" placeholder="Message" required></textarea>
+                <button type="submit" class="btn btn-primary">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+
 
     <footer>
         <div class="container footer__container">
